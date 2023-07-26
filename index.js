@@ -3,6 +3,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
+const swaggerUi = require('swagger-ui-express');
+const swaggerFile = require('./swagger/autoGenDoc/swagger_output.json');
+const swaggerOpitions = {customCssUrl: '/swagger-ui.css'}
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');

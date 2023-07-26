@@ -28,20 +28,11 @@
    ],
       comsumes: ['aplication/json'],
       produces: ['aplication/json'],
-      securityDefinitions: {
-         api_key:{
-            type: "apikey",
-            name: "api_key",
-            in: "header"
-         }
-      },
-      components: {
-         shemas: {
-            Usuario: mangooseToSwagger(EsquemaUsuario),
-            Tarefa:mangooseToSwagger(EsquemaTarefa),
-         }
-      }
-
  }
 
- 
+ swaggerAutogen(outputFile, endpointFiles, doc).then(() => {
+   console.log('Documentação do Swagger gerada encontra-se no arquivo em: ' + outputFile);
+   if (process.env.NODE_ENV !== 'production'){
+      require("../index.js");
+   }
+ })
