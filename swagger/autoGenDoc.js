@@ -7,7 +7,7 @@
  });
 
  const outputFile = './swagger_output.json';
- const endpointFiles = ['../index', '../src/routes.js'];
+ const endpointFiles = ['../index.js'];
 
 
  let doc = {
@@ -22,7 +22,7 @@
          description: "Servidor localhost"
       },
       {
-         url: "http://localhost:4000/",
+         url: "servidor vercel <= ",
          description: "Servidor de produção"
       }
    ],
