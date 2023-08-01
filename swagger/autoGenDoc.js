@@ -22,7 +22,7 @@
          description: "Servidor localhost"
       },
       {
-         url: "servidor vercel <= ",
+         url: "https://dnc-board-task-back-lac.vercel.app",
          description: "Servidor de produção"
       }
    ],
