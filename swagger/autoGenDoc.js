@@ -7,7 +7,7 @@
  });
 
  const outputFile = './swagger_output.json';
- const endpointFiles = ['../index.js'];
+ const endpointFiles = ['../index.js', '../src/routes.js'];
 
 
  let doc = {
@@ -18,7 +18,7 @@
    },
    servers: [
       {
-         url: "http://localhost:4000/",
+         url: "http://localhost:5032/",
          description: "Servidor localhost"
       },
       {
